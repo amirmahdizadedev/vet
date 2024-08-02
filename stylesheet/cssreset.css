@@ -1,0 +1,99 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@font-face {
+    font-family: Patua;
+    src: url("../fonts/Patua_One/PatuaOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: cabin;
+    src: url("../fonts/Cabin/Cabin-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+@keyframes anime1 {
+    to {
+        border-radius: 52% 48% 27% 73% / 43% 20% 80% 57%;
+    }
+}
+
+@keyframes anime2 {
+    to {
+        border-radius: 69% 31% 85% 15% / 16% 61% 39% 84%;
+    }
+}
+
+:root {
+    --green: #3EC492;
+}
+
+body {
+
+    width: 100%;
+    /* font-family: patua; */
+    font-family: patua;
+    font-size: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    &:active {
+        color: inherit;
+    }
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@keyframes example {
+    0% {
+        left: 0%;
+        top: 0%;
+    }
+
+    20% {
+        left: 200px;
+        top: 0;
+    }
+
+    40% {
+        left: 200px;
+        top: 130px;
+    }
+
+    60% {
+       left: -150px;
+       top: 130px;
+    }
+
+    80% {
+        left: -150px ;
+        top: 0;
+
+        
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
